@@ -2,7 +2,7 @@
 
 
 
-    <title>SCP-173 - SCP Foundation</title>
+    <title>SCP-480 - SCP Foundation</title>
     
     
     
@@ -22,12 +22,12 @@
         WIKIREQUEST.info.siteUnixName = "scp-wiki";
         WIKIREQUEST.info.categoryId = 366566;
         WIKIREQUEST.info.themeId = 1;
-        WIKIREQUEST.info.requestPageName = "scp-173";
-        OZONE.request.timestamp = 1776981871;
+        WIKIREQUEST.info.requestPageName = "scp-480";
+        OZONE.request.timestamp = 1776982012;
         OZONE.request.date = new Date();
         WIKIREQUEST.info.lang = 'en';
-                WIKIREQUEST.info.pageUnixName = "scp-173";
-        WIKIREQUEST.info.pageId = 1956234;
+                WIKIREQUEST.info.pageUnixName = "scp-480";
+        WIKIREQUEST.info.pageId = 1459993950;
                         WIKIREQUEST.info.lang = "en";
         OZONE.lang = "en";
         var isUAMobile = !!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -204,6 +204,88 @@ a[href*="user:info/adminbright"]:nth-child(1)::before {
   background-position-x: 8px, 0;
 }
 </style>
+<style>
+div.preview { display: none; }
+</style>
+<style>
+.earthworm {
+  --earthworm-segment-border-color: rgba(150,150,150,0.5);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin: 1em 0;
+  clear: both;
+  min-height: 36px;
+}
+.earthworm a {
+  word-break: normal;
+}
+.earthworm__previous, .earthworm__hub, .earthworm__next {
+  display: flex;
+  align-items: center;
+}
+.earthworm p {
+  margin: 0 0.8em;
+  text-align: center;
+}
+.earthworm__previous, .earthworm__next {
+  border-top: 2px solid var(--earthworm-segment-border-color);
+  border-bottom: 2px solid var(--earthworm-segment-border-color);
+  position: relative;
+}
+.earthworm__hub {
+  margin: -3px 0;
+  border: 3px solid var(--earthworm-segment-border-color);
+  background: linear-gradient(10deg, rgba(150,150,150,0.1), rgba(150,150,150,0));
+  position: relative;
+}
+.earthworm__arrowhead {
+  width: auto;
+  height: calc(100% + 2px);
+  top: -2.5px;
+  display: block;
+  position: absolute;
+  border-style: solid;
+  border-color: var(--earthworm-segment-border-color);
+}
+.earthworm__arrowhead--left {
+  left: 0;
+  transform: scale(0.707) rotate(-45deg);
+  border-width: 2.8px 0 0 2.8px;
+  transform-origin: 0% 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+.earthworm__arrowhead--right {
+  right: 0;
+  transform: scale(0.707) rotate(45deg);
+  border-width: 2.8px 2.8px 0 0;
+  transform-origin: 100% 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+}
+
+/* Hide segments that have url=/ AND (title= OR title=/) */
+.earthworm__previous:has(a[href="/"]):is([data-title="\{\$previous-title\}"], [data-title="/"]),
+.earthworm__next:has(a[href="/"]):is([data-title="\{\$next-title\}"], [data-title="/"]),
+.earthworm__hub:is([data-title="\{\$next-title\}"], [data-title="/"]) a[href="/"] {
+  display: none;
+}
+
+/* Style href=/ links to look like plain text */
+.earthworm a[href="/"] {
+  color: #333;
+  text-decoration: none;
+  cursor: text;
+  pointer-events: none;
+}
+
+/* Backwards compatibility: support old syntax */
+.earthworm--old-syntax-first-true .earthworm__previous,
+.earthworm--old-syntax-last-true .earthworm__next,
+.earthworm--old-syntax-hub-no .earthworm__hub a {
+  display: none;
+}
+</style>
 <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
 <script data-cfasync="false" async="" src="https://s.nitropay.com/ads-143.js"></script>
 <script type="text/javascript" src="https://d3g0gp89917ko0.cloudfront.net/v--7690939296dc/common--modules/js/list/ListPagesModule.js"></script>
@@ -249,7 +331,7 @@ a[href*="user:info/adminbright"]:nth-child(1)::before {
                     
                     
                         <div id="page-title">
-                            SCP-173
+                            SCP-480
                         </div>
                     
 
@@ -262,13 +344,91 @@ a[href*="user:info/adminbright"]:nth-child(1)::before {
                     <div id="page-content">
                         
 
-<div style="text-align: right;"><div class="page-rate-widget-box"><span class="rate-points">rating:&nbsp;<span class="number prw54353">+10639</span></span></div></div>
-<p><strong>Item #:</strong> SCP-173</p>
-<p><strong>Object Class:</strong> Euclid</p>
-<p><strong>Special Containment Procedures:</strong> Item SCP-173 is to be kept in a locked container at all times. When personnel must enter SCP-173's container, no fewer than 3 may enter at any time and the door is to be relocked behind them. At all times, two persons must maintain direct eye contact with SCP-173 until all personnel have vacated and relocked the container.</p>
-<p><strong>Description:</strong> Moved to Site-19&nbsp;1993. Origin is as of yet unknown. It is constructed from concrete and rebar with traces of Krylon brand spray paint. SCP-173 is animate and extremely hostile. The object cannot move while within a direct line of sight. Line of sight must not be broken at any time with SCP-173. Personnel assigned to enter container are instructed to alert one another before blinking. Object is reported to attack by snapping the neck at the base of the skull, or by strangulation. In the event of an attack, personnel are to observe Class 4 hazardous object containment procedures.</p>
-<p>Personnel report sounds of scraping stone originating from within the container when no one is present inside. This is considered normal, and any change in this behaviour should be reported to the acting HMCL supervisor on duty.</p>
-<p>The reddish brown substance on the floor is a combination of feces and blood. Origin of these materials is unknown. The enclosure must be cleaned on a bi-weekly basis.</p>
+<div class="content-separator" style="display: none:"></div>
+<div class="preview">
+<p>PlaguePJP &amp; Fishish: XLIX</p>
+</div>
+
+
+
+<div class="content-separator" style="display: none:"></div>
+<div style="text-align: right;"><div class="page-rate-widget-box"><span class="rate-points">rating:&nbsp;<span class="number prw54353">+121</span></span></div></div>
+<div style="text-align: right; margin-top: -19px; margin-right: 30px;">
+<p><span style="font-size:80%;"><span style="color: #757575">by PlaguePJP &amp; Fishish</span></span></p>
+</div>
+<p><strong>Item #:</strong> SCP-480</p>
+<p><strong>Object Class:</strong> Safe</p>
+<p><strong>Special Containment Procedures:</strong> The manifestation of SCP-480 is a self-isolating phenomenon, requiring minimal Foundation intervention in its concealment from the public. Civilian sightings of SCP-480 are to be discredited and remedied via the administration of Class-C amnestics.</p>
+<p><strong>Description:</strong> SCP-480 is a male Labrador Retriever that spontaneously manifests throughout highways, roads, and other automobile-accessible pathways worldwide. It only appears in areas experiencing significant traffic congestion.</p>
+<p>As the congestion clears up, SCP-480 will suddenly manifest 10-30 centimeters in front of a vehicle positioned near the front third of the exiting traffic line. This will result in SCP-480 being run over and crushed continually.</p>
+<p>When left unattended for a period longer than 15 minutes, SCP-480 will disappear. Any injuries sustained in previous manifestations are fully healed by the next event.</p>
+<p>Analysis of SCP-480 events has confirmed that all manifestations are of a singular Labrador Retriever. It is unclear whether SCP-480 retains any memory of its previous manifestations or not.</p>
+<p><strong>Addendum 480.1:</strong> Known Events</p>
+<table class="wiki-content-table">
+<tbody><tr>
+<th>Location</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Interstate 676, Philadelphia, PA</td>
+<td>Instance manifested; crushed by 756 vehicles. All four limbs sustained extreme damage, 85% blood volume lost, body nearly bisected laterally. Cranium remained intact.</td>
+</tr>
+<tr>
+<td>NH 44, Maharashtra</td>
+<td>Instance manifested; ribcage shattered on impact. Thoracic cavity filled with blood prior to discovery.</td>
+</tr>
+<tr>
+<td>Autopista México-Querétaro 57D</td>
+<td>Instance manifested; impacted at a rate of 3.7 vehicles per minute for a period of approximately three hours before Foundation intervention. Instance had been torn apart at several points along its bottom half.</td>
+</tr>
+<tr>
+<td>Via Emanuele Filiberto</td>
+<td>Instance manifested; ran over by tour bus immediately upon manifestation. Trauma localized to extremities and lower abdomen. No damage sustained to cranium.</td>
+</tr>
+</tbody></table>
+<p><strong>Addendum 480.2:</strong> Incident</p>
+<p>On 03/21/2014 at 03:58 AM, Foundation pattern recognition software was alerted to a potential instance of SCP-480 on Interstate 80 near Rock Springs, Wyoming. The following video was captured via Agent Lionel Garver's body camera.</p>
+<div class="blockquote">
+<p style="text-align: center;"><strong>TRANSCRIPT</strong></p>
+<hr>
+<p style="text-align: center;"><strong>«BEGIN LOG»</strong></p>
+<p><em>(Agent Garver pulls over onto the shoulder of I-80 and exits his vehicle, flashlight in hand.)</em></p>
+<p><em>(Any previous traffic has cleared. Garver sweeps the area with his flashlight, then walks west away from his vehicle.)</em></p>
+<p><em>(After approximately 45 meters, Garver notices a twitching, bloody mass in the distance. His pace quickens towards it.)</em></p>
+<p><em>(Garver confirms SCP-480 activity to command.)</em></p>
+<p><em>(The entity remains alive through unknown means.)</em></p>
+<p><em>(Overwatch Command orders Garver to return to his vehicle and await the arrival of a containment team.)</em></p>
+<p><em>(SCP-480 whimpers.)</em></p>
+<p><em>(Garver turns and walks toward his vehicle.)</em></p>
+<p><em>(After walking approximately 7 meters, Garver turns back around. SCP-480 continues to twitch. He unholsters his pistol and approaches it again.)</em></p>
+<p><em>(Garver stands over the entity and points his gun at its still unharmed head. He fires, piercing the skull.)</em></p>
+<p><em>(The twitching ceases.)</em></p>
+<p><em>(Garver turns and walks toward his vehicle.)</em></p>
+<p><em>(SCP-480 whimpers.)</em></p>
+<p style="text-align: center;"><strong>«END LOG»</strong></p>
+</div>
+<hr>
+<div class="earthworm earthworm--old-syntax-first-{$first} earthworm--old-syntax-last-{$last} earthworm--old-syntax-hub-{$hub} {$class}">
+<div class="first earthworm__previous" data-title="SCP-8391">
+<div class="inner earthworm__inner"><img src="https://scp-wiki.wdfiles.com/local--files/component%3Aearthworm/Transparent.gif" class="image earthworm__arrowhead earthworm__arrowhead--left" alt="Transparent.gif">
+<div class="arrow earthworm__arrow"></div>
+</div>
+<p><a href="/scp-8391">SCP-8391</a></p>
+</div>
+<div class="hub earthworm__hub" data-title="ANIMAL HOSPITAL HUB">
+<p><a href="/animal-hospital-hub">ANIMAL HOSPITAL HUB</a></p>
+</div>
+<div class="last earthworm__next" data-title="Open Season">
+<div class="inner earthworm__inner"><img src="https://scp-wiki.wdfiles.com/local--files/component%3Aearthworm/Transparent.gif" class="image earthworm__arrowhead earthworm__arrowhead--right" alt="Transparent.gif">
+<div class="arrow earthworm__arrow"></div>
+</div>
+<p><a href="/open-season">Open Season</a></p>
+</div>
+</div>
+
+
+
+<div style="text-align: center;">
 
 <div class="licensebox">
 <div class="collapsible-block">
@@ -281,7 +441,7 @@ a[href*="user:info/adminbright"]:nth-child(1)::before {
 
 
 <blockquote>
-<p>"<a href="/scp-173">SCP-173</a>" by Moto42, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-173">https://scpwiki.com/scp-173</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
+<p>"<a href="/scp-480">SCP-480</a>" by Fishish, from the <a href="https://scpwiki.com">SCP Wiki</a>. Source: <a href="https://scpwiki.com/scp-480">https://scpwiki.com/scp-480</a>. Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.</p>
 </blockquote>
 </div>
     
@@ -289,6 +449,7 @@ a[href*="user:info/adminbright"]:nth-child(1)::before {
     
     </div>
 <p>For information on how to use this component, see the <a href="/component:license-box">License Box component</a>. To read about licensing policy, see the <a href="/licensing-guide">Licensing Guide</a>.</p>
+</div>
 </div>
 </div>
 </div>
@@ -326,7 +487,7 @@ window['nitroAds'].createAd('wad-scp-wiki-below-content-anchor', {
                     
                         <div class="page-tags">
                             <span>
-                                <a href="/system:page-tags/tag/_licensebox#pages">_licensebox</a><a href="/system:page-tags/tag/autonomous#pages">autonomous</a><a href="/system:page-tags/tag/ectoentropic#pages">ectoentropic</a><a href="/system:page-tags/tag/euclid#pages">euclid</a><a href="/system:page-tags/tag/featured#pages">featured</a><a href="/system:page-tags/tag/horror#pages">horror</a><a href="/system:page-tags/tag/hostile#pages">hostile</a><a href="/system:page-tags/tag/murder-monster#pages">murder-monster</a><a href="/system:page-tags/tag/mystery#pages">mystery</a><a href="/system:page-tags/tag/observational#pages">observational</a><a href="/system:page-tags/tag/scp#pages">scp</a><a href="/system:page-tags/tag/sculpture#pages">sculpture</a><a href="/system:page-tags/tag/the-sculpture#pages">the-sculpture</a>
+                                <a href="/system:page-tags/tag/_licensebox#pages">_licensebox</a><a href="/system:page-tags/tag/animal-hospital#pages">animal-hospital</a><a href="/system:page-tags/tag/but-a-dream#pages">but-a-dream</a><a href="/system:page-tags/tag/canine#pages">canine</a><a href="/system:page-tags/tag/co-authored#pages">co-authored</a><a href="/system:page-tags/tag/phenomenon#pages">phenomenon</a><a href="/system:page-tags/tag/safe#pages">safe</a><a href="/system:page-tags/tag/scp#pages">scp</a><a href="/system:page-tags/tag/uncontained#pages">uncontained</a>
                             </span>
                         </div>
                     
@@ -334,7 +495,7 @@ window['nitroAds'].createAd('wad-scp-wiki-below-content-anchor', {
                     <div id="page-info-break"></div>
                     
                         <div id="page-options-container">
-                            <div id="page-info">page revision: 57, last edited: <span class="odate time_1743596247 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%20%28%25O%20ago%29">02 Apr 2025 12:17</span></div>
+                            <div id="page-info">page revision: 24, last edited: <span class="odate time_1768093839 format_%25e%20%25b%20%25Y%2C%20%25H%3A%25M%20%28%25O%20ago%29">11 Jan 2026 01:10</span></div>
             
 <div id="page-options-bottom-2" class="page-options-bottom form-actions" style="display:none">
     <a href="javascript:;" class="btn btn-default" id="edit-sections-button">Edit Sections</a>
